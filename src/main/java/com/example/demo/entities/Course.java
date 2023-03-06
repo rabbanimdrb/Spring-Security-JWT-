@@ -4,13 +4,13 @@ public class Course {
 	
 	private long id;
 	private String title;
-	private String desciption;
+	private String description;
 	
-	public Course(long id, String title, String desciption) {
+	public Course(long id, String title, String description) {
 		super();
 		this.id = id;
 		this.title = title;
-		this.desciption = desciption;
+		this.description = description;
 	}
 
 	public long getId() {
@@ -29,17 +29,17 @@ public class Course {
 		this.title = title;
 	}
 
-	public String getDesciption() {
-		return desciption;
+	public String getdescription() {
+		return description;
 	}
 
-	public void setDesciption(String desciption) {
-		this.desciption = desciption;
+	public void setdescription(String description) {
+		this.description = description;
 	}
 
 	@Override
 	public String toString() {
-		return "Course [id=" + id + ", title=" + title + ", desciption=" + desciption + "]";
+		return "Course [id=" + id + ", title=" + title + ", description=" + description + "]";
 	}
 
 }
