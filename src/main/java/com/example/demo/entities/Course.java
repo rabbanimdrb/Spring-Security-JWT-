@@ -1,7 +1,14 @@
 package com.example.demo.entities;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table
 public class Course {
 	
+	@Id
 	private long id;
 	private String title;
 	private String description;
@@ -12,6 +19,12 @@ public class Course {
 		this.title = title;
 		this.description = description;
 	}
+
+	public Course() {
+		super();
+
+	}
+
 
 	public long getId() {
 		return id;
